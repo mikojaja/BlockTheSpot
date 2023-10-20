@@ -4,7 +4,7 @@ void LoadAPI(LPVOID* destination, const char* apiName)
 {
     if (*destination)
         return;
-
+	// blah blah
     static std::wstring_view path{ L"dpapi.dll" };
     static HMODULE hModule = GetModuleHandleW(path.data());
     static std::map<std::string, FARPROC> function_map;
